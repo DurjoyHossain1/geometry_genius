@@ -16,9 +16,9 @@
 
     <div id="main" class="mt-14">
       <div class="flex flex-col md:flex-row ">
-        <!--Card-->
+        <!-- Card Container-->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-7">
-          <!--Card-->
+          <!--Triangle Card-->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -35,13 +35,15 @@
                 <input id="tringle-height" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
                 <span>cm</span>
               </div>
-              <p class="text-xl text-center mt-3 text-gray-800">Area:<span id="area-span"></span> <span>cm</span><sup>2</sup></p>
+              <div>
+                <p class="text-xl text-center mt-3 text-gray-800">Area: <span id="area-span"> </span> <span>cm</span><sup>2</sup></p>
+              </div>
               <div class="card-actions ">
                 <button onclick="calculateFunctionArea()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
               </div>
             </div>
           </div>
-          <!--Card-->
+          <!--Rectangle Card-->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -50,20 +52,48 @@
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <h2 class="card-title text-center mx-auto">Rectangle</h2>
               <p class="text-center">Area (A) = W X l</p>
               <div>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="length">
+                <input id="rect-length" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="length">
                 <span>cm</span>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="width">
+                <input id="rect-width" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="width">
                 <span>cm</span>
+              </div>
+              <div>
+                <p class="text-xl text-center">Area: <span id="area-react-span"> </span> <span>cm</span><sup>2</sup></p>
               </div>
               <div class="card-actions ">
                 <button onclick="calculateRectangleFunction()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
               </div>
             </div>
           </div>
-          <!--Card-->
+          <!--Parallelogram Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/parallelogram.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Parallelogram</h2>
+              <p class="text-center text-xl font-bold">Area (A) = b X h</p>
+              <div>
+                <input id="paralalogream-base" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="base">
+                <span>cm</span>
+                <input id="paralalogream-height" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="height">
+                <span>cm</span>
+              </div>
+              <div>
+                <p class="text-xl text-center"> Area: <span id="paralalogream-area"></span> <span>cm</span><sup>2</sup> </p>
+              </div>
+              <div class="card-actions ">
+                <button onclick="calculateParalaloGremFunction()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!--Rhombus Card-->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -85,7 +115,7 @@
               </div>
             </div>
           </div>
-          <!--Card-->
+          <!--Pentagon Card-->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -107,29 +137,7 @@
               </div>
             </div>
           </div>
-          <!--Card-->
-          <div class="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="images/triangle.png"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-center mx-auto">Triangle</h2>
-              <p class="text-center">Area (A) =0.5 X b X h</p>
-              <div>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
-                <span>cm</span>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
-                <span>cm</span>
-              </div>
-              <div class="card-actions ">
-                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
-              </div>
-            </div>
-          </div>
-          <!--Card-->
+          <!--Ellipse Card-->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -153,14 +161,15 @@
           </div>
         </div>
          <!--Calculate-->
-         <div class="w-96 border-2 border-gray-500">
+         <div class="w-96 border-2 border-gray-500 text-center p-3">
             <h1 class="text-3xl">Area Calculation</h1>
           </div>
       </div>
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/react.js"></script>
+    <script src="js/paralalogram.js"></script>
   </body>
 </html>

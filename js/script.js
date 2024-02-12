@@ -10,4 +10,3 @@ function calculateFunctionArea(){
    const areaSpanText =  document.getElementById('area-span');
    areaSpanText.innerText = ease;
 };
-calculateFunctionArea()
