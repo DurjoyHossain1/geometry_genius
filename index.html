@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geometry genious</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div id="main" class="mt-14">
+      <div class="flex flex-col md:flex-row ">
+        <!--Card-->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-7">
+          <!--Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <div>
+                <input id="triangle-base" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <span>cm</span>
+                <input id="tringle-height" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <span>cm</span>
+              </div>
+              <p class="text-xl text-center mt-3 text-gray-800">Area:<span id="area-span"></span> <span>cm</span><sup>2</sup></p>
+              <div class="card-actions ">
+                <button onclick="calculateFunctionArea()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/rectangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <p class="text-center">Area (A) = W X l</p>
+              <div>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="length">
+                <span>cm</span>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="width">
+                <span>cm</span>
+              </div>
+              <div class="card-actions ">
+                <button onclick="calculateRectangleFunction()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <div>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <span>cm</span>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <span>cm</span>
+              </div>
+              <div class="card-actions ">
+                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <div>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <span>cm</span>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <span>cm</span>
+              </div>
+              <div class="card-actions ">
+                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <div>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <span>cm</span>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <span>cm</span>
+              </div>
+              <div class="card-actions ">
+                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="images/triangle.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center mx-auto">Triangle</h2>
+              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <div>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <span>cm</span>
+                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <span>cm</span>
+              </div>
+              <div class="card-actions ">
+                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Calculate-->
+         <div class="w-96 border-2 border-gray-500">
+            <h1 class="text-3xl">Area Calculation</h1>
+          </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="js/react.js"></script>
+  </body>
+</html>
