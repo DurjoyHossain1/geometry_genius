@@ -97,21 +97,25 @@
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="images/triangle.png"
+                src="images/rhombus.png"
                 alt="Shoes"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title text-center mx-auto">Triangle</h2>
-              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <h2 class="card-title text-center mx-auto">Rhombus</h2>
+              <p class="text-center">Area (A) =0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+              
               <div>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <input id="romboush-base" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="d1">
                 <span>cm</span>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <input id="rombosh=base2" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="d2">
                 <span>cm</span>
               </div>
+              <div>
+                <p class="text-xl text-center mt-2">Area: <span id="rombosh-area"></span> <span>cm</span><sup>1</sup></p>
+              </div>
               <div class="card-actions ">
-                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+                <button onclick="calculateRombosh()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
               </div>
             </div>
           </div>
@@ -119,21 +123,24 @@
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="images/triangle.png"
+                src="images/pentagon.png"
                 alt="Shoes"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title text-center mx-auto">Triangle</h2>
-              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <h2 class="card-title text-center mx-auto">Pentagon</h2>
+              <p class="text-center">Area (A) =0.5 X p X b</p>
               <div>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <input id="pantagoan-pose" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="p">
                 <span>cm</span>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <input id="pantagoan-base" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
                 <span>cm</span>
               </div>
+              <div>
+                <p class="text-center text-xl">Area: <span id="pentagon-area"></span> <span>cm</span> <sup>2</sup></p>
+              </div>
               <div class="card-actions ">
-                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+                <button onclick="calculatePantagoan()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
               </div>
             </div>
           </div>
@@ -141,21 +148,24 @@
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
-                src="images/triangle.png"
+                src="images/ellipse.png"
                 alt="Shoes"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title text-center mx-auto">Triangle</h2>
-              <p class="text-center">Area (A) =0.5 X b X h</p>
+              <h2 class="card-title text-center mx-auto">Ellipse</h2>
+              <p class="text-center">Area (A) = pai * ab</p>
               <div>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
+                <input id="elips-aese" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="b">
                 <span>cm</span>
-                <input class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
+                <input id="elips-height" class="bg-[#F1F1F1] w-24 p-2 outline-none" type="text" placeholder="h">
                 <span>cm</span>
               </div>
+              <div>
+                <p class="text-xl text-center">Area: <span id="span-Area"></span> <span>cm</span><sup>2</sup></p>
+              </div>
               <div class="card-actions ">
-                <button class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
+                <button onclick="calculateElipsFunction()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold text-2xl mt-6">Calculate</button>
               </div>
             </div>
           </div>
@@ -171,5 +181,8 @@
     <script src="js/script.js"></script>
     <script src="js/react.js"></script>
     <script src="js/paralalogram.js"></script>
+    <script src="js/romboush.js"></script>
+    <script src="js/pantagoan.js"></script>
+    <script src="js/elips.js"></script>
   </body>
 </html>
